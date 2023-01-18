@@ -1,8 +1,6 @@
-import { Component } from "react";
+import React from "react";
 
-class PersonCard extends Component {
-    render() { 
-        const {lastName, firstName, age, hairColor}= this.props;
+const PersonCard = ({lastName, firstName, age, hairColor}) => {    
 
         return (
         <div className="person">
@@ -11,6 +9,6 @@ class PersonCard extends Component {
             <p>Hair color: {hairColor}</p>
         </div>
         );
-    }
 }
+
 export default PersonCard;
